@@ -8,10 +8,6 @@ This project is focused on enhancing my full-stack development skills using HTML
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Features](#features)
-- [Performance Improvements](#performance-improvements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
