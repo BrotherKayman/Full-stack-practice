@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="wrapper-1">
+<div>
+    <h1>Heading 1</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam quidem, laborum dolorum ex beatae optio saepe deserunt molestias corporis illum eos ad minima consequuntur accusamus! Minima itaque deserunt earum.</p>
+    <button id="btn-learn">Learn More</button>
+</div>
+<div>
+    <h1>Heading 2</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam quidem, laborum dolorum ex beatae optio saepe deserunt molestias corporis illum eos ad minima consequuntur accusamus! Minima itaque deserunt earum.</p>
+    <button id="btn-learn">Learn More</button>
+</div>
+<div>
+    <h1>Heading 3</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam quidem, laborum dolorum ex beatae optio saepe deserunt molestias corporis illum eos ad minima consequuntur accusamus! Minima itaque deserunt earum.</p>
+    <button id="btn-learn">Learn More</button>
+</div>
+<div>
+    <h1>Heading 4</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam quidem, laborum dolorum ex beatae optio saepe deserunt molestias corporis illum eos ad minima consequuntur accusamus! Minima itaque deserunt earum.</p>
+    <button id="btn-learn">Learn More</button>
+</div>
+    </div>
+
+    <style>
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 3s ease-in-out;
+       }
+        .wrapper-1{
+            display: flex;
+            overflow: hidden;
+            margin: 20px;
+            
+            padding: 2px;
+            text-align: center;
+            align-content: center;
+            
+            width: 60rem;
+        }
+        .wrapper-1 div{
+            margin: 20px;
+            padding: 5px;
+            background-color: rgb(224, 182, 119);
+            text-align: center;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 5px;
+            h1{
+                border-bottom: 15rem;
+                border-width: 15rem;
+                border-color: aliceblue;
+            }
+        }
+        #btn-learn{
+            visibility: hidden;
+        }
+         div :hover{
+                background-color: rgb(119, 93, 53);
+                transform: scaleY(150%);
+                transform: scaleX(120%);
+                box-shadow: 5px 5px 15px black;
+                color: aliceblue;
+         #btn-learn{
+                    visibility: visible;
+                }
+            }
+        
+    </style>
+
+</body>
+</html>
