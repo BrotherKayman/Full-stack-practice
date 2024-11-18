@@ -1,5 +1,5 @@
-body{
-    overflow: auto;
+*{
+    justify-content: space-evenly;
     
 }
 
@@ -9,9 +9,9 @@ body{
     
     
 }
+
 .second-nav{
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.438);
     position: fixed;
     width: 100%;
     text-align: center;
@@ -122,8 +122,8 @@ fieldset .row{
 
 .body-items{
     gap: 1rem;
-    padding: 20px;
-    background-color: black;
+    padding: 10px;
+    background-color: rgb(0, 134, 158);
     
     h1{
         font-weight: bold;
@@ -133,7 +133,23 @@ fieldset .row{
         
     }
 }
+
+.about-us{
+    color:rgb(0, 134, 158);
+    padding: 10px;
+    
+    .text{
+        flex-wrap: wrap;
+    text-align: center;
+    }
+    h1{
+        font-weight: bold;
+    }
+}
+
 .benefits{
+    padding: 10px;
+    max-width: 100%;
     height: fit-content;
     display: flex;
 flex-wrap: wrap; 
@@ -141,6 +157,7 @@ justify-content: left;
 gap: 2rem; 
 text-align: center;
 color: white;
+
 img{
     background-color: white;
     border-radius: 10px;
@@ -148,41 +165,37 @@ img{
 
 
 article{
-    flex: 1 1 calc(200px);
+    flex: 1 1 ;
+    padding: 15px;
+    /*outline: 5px solid red;*/
+    max-width: 90%;
+        
+    
 }
-    h1{
+    h3{
     text-align: center;
-    color: red;
+    color: white;
 
     
 }
 
+}
 
-i{
-    justify-content: center;
-    
-    color: red;
-    
-}
-}
-.body{
-    display: flex;
-    background-color: rgba(163, 163, 163, 0.322);
-    
-    box-shadow: 0px 10px 5px black;
-}
 
 .doctors{
+    color: rgb(0, 134, 158);
     flex-wrap: wrap;
-    background-color: white;
+    
     height: fit-content;
     padding: 30px;
     text-align: center;
-    overflow:initial;
+    
 
-    h1{
+    h1, h5{
         font-weight: bold;
+        
     }
+   
 
     .cards{
         flex-wrap: wrap;
@@ -201,13 +214,14 @@ i{
         margin: 0 auto;
         border-bottom: 2px solid;
         &:hover{
-            box-shadow: 0px 5px 5px red;
+            box-shadow: 0px 5px 5px rgb(0, 134, 158);
             transition: all 0.2s ease-out;
             cursor: pointer;
-            
-            p, h3{
-            color: red;
+            transform: rotate(5deg);
+            p, h3, h5{
+            color: rgb(0, 134, 158);
             transition: all 0.5s ease-out;
+            transform: rotate(-5deg);
             
             }
             h3{
@@ -233,12 +247,65 @@ border-radius: 5px;
 
 }
 
+/*Reviews*/
 
+.reviews{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+
+.review-list{
+    
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-evenly;
+    
+    
+    
+    
+}
+    .review-box{
+        flex: auto;
+        min-width: 5rem;
+        gap: 5rem;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        box-shadow: 0 5px 5px rgba(82, 82, 82, 0.589);
+        
+        h5{
+            font-weight: bold;
+        }
+
+&:hover{
+    background-color: rgba(0, 134, 158, 0.699);
+    box-shadow: 0 5px 5px rgb(0, 134, 158);
+    color: white;
+    transform: rotate(2deg);
+    transition: 0.5s ease-in-out;
+    
+}
+    }
+}
+
+.below-body{
+    text-align: center;
+    background-color: rgb(0, 134, 158);
+    color: white;
+    padding: 10px;
+    height: 10rem;
+}
 footer{
     padding: 10px;
     flex-wrap: wrap;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 134, 158);
+    
     
     
 
@@ -249,6 +316,8 @@ footer{
     gap: 2rem;
     padding: 10px;
     justify-content: center;
+    
+    
 
     iframe{
         
@@ -275,6 +344,7 @@ footer{
     
     text-decoration: none;
     list-style: none;
+    color: white;
 }
     .follow-us
     .socials{
@@ -290,3 +360,7 @@ footer{
             
         }
     }
+.copyright a{
+text-decoration: none;
+color: rgb(1, 49, 58);
+}
