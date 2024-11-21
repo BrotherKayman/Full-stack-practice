@@ -21,44 +21,52 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 134, 158);">
         <div class="container-fluid">
-          <a class="navbar-brand" href="">Dr More</a>
+          <a class="navbar-brand" href="" style="color: white; font-weight: bold;">Dr More</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " href="">Home</a>
+              <li class="nav-item" >
+                <a class="nav-link " href="" style="color: aqua;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="">Our Team</a>
+                <a class="nav-link " href="" style="color: aqua;">Our Team</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aqua;">
                   Services
                 </a>
-                <ul class="dropdown-menu">    
-              <li><a class="dropdown-item" href="services.html">General Consultations</a></li>
-              <li><a class="dropdown-item" href="services.html">Chronic Disease Management</a></li>
-              <li><a class="dropdown-item" href="services.html">Pediatric Care</a></li>
-              <li><a class="dropdown-item" href="services.html">Women’s Health Services</a></li>
-              <li><a class="dropdown-item" href="services.html">Diagnostic Testing</a></li>
-              <li><a class="dropdown-item" href="services.html">Vaccinations</a></li>
-              <li><a class="dropdown-item" href="services.html">Minor Surgery and Procedures</a></li>
+                <div class="services-nav">
+                <ul class="dropdown-menu" style="background-color: rgb(0, 134, 158)">
+                  <div class="about-services">
+                    <h2>Our Services</h2>
+                  </div> 
+                  
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">General Consultations</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Chronic Disease Management</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Pediatric Care</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Women’s Health Services</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Diagnostic Testing</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Vaccinations</a></li>
+              <li><a class="dropdown-item" href="services.html" style="color: aqua;">Minor Surgery and Procedures</a></li>
                 </ul>
+                </div>
               </li>
+              
+              
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="">Contact Us</a>
+                <a class="nav-link " href="" style="color: aqua;">Contact Us</a>
               </li>
 
 
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-info" type="search">Search</button>
             </form>
           </div>
         </div>
@@ -67,10 +75,14 @@
       <!--Info Nav-->
       <div class="info-nav">
         <ul>
-          <li>
+          <li class="address">
             
             <i class="fas fa-home"></i>
             1 ABC Street
+            <ul class="links">
+              <li>link</li>
+              <li>link2</li>
+            </ul>
       </li>
           <li>
             
@@ -248,7 +260,29 @@
 <div class="below-body">
   <h5>Klerksdorp Doctors</h5>
   <h1>Dr. More Medical Centre</h1>
-  <p>Numbers** Patients assisted** some javascript</p>
+  <div class="happy-clients">
+    <div class="counter">
+      <h1> <p>+</p></h1>
+      <br>
+      <h4>happy clients </h4>
+          </div>
+          <div class="counter">
+            <h1> <p>+</p></h1>
+            <br>
+            <h4>happy patients </h4>
+                </div>
+
+                <div class="counter">
+                  <h1> <p>+</p></h1>
+                  <br>
+                  <h4>happy patients </h4>
+                      </div>
+
+                      
+  </div>
+  <div class="line"></div>
+            
+
 </div>
 
 <div class="reviews">
@@ -256,7 +290,7 @@
   <p>We pride ourselves on providing excellent care and service to our patients. Here’s what some of them have to say:</p>
   <ul class="review-list">
 
-  <div class="review-box">
+  <div class="review-box" id="review1">
     <h5>Itumeleng Maruping</h5>
     <p>Dr. More has been a lifesaver for me. The staff is professional, the doctors are caring, and I always leave feeling better. Highly recommend!</p>
     <div class="rating">
@@ -267,7 +301,7 @@
       <i class="fa-solid fa-star" style="color:gold"></i>
   </div>  
   </div>
-  <div class="review-box">
+  <div class="review-box" id="review2">
     <h5>Nicole Smith</h5>
     <p>Loved it here, feels more like home than a clinic. </p>
     <div class="rating">
@@ -278,7 +312,7 @@
       <i class="fa-solid fa-star" style="color:gold"></i>
   </div>  
   </div>
-  <div class="review-box">
+  <div class="review-box" id="review3">
     <h5>Dineo Van wyk</h5>
     <p>Best service ever</p>
     <div class="rating">
@@ -290,7 +324,7 @@
   </div>  
   </div>
     
-  <div class="review-box">
+  <div class="review-box" id="review4">
     <h5>Sonia Hendricks</h5>
     <p>I’ve been taking my children to Dr. More for years. The doctors are wonderful with kids and always makes sure we leave with answers to our questions.</p>
     <div class="rating">
@@ -374,5 +408,6 @@
  
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
