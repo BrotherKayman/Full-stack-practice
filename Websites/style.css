@@ -117,6 +117,7 @@
 }
 .form{
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
 fieldset .form-radio{
