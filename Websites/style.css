@@ -115,10 +115,13 @@
     
 }
 }
+.form{
+    max-width: 100%;
+}
 
 fieldset .form-radio{
     display: flex;
-    color: red;
+    color: rgb(0, 69, 172);
     gap: 2rem;
 }
 fieldset .row{
