@@ -37,7 +37,7 @@
     gap: 2rem;
     padding: 10px;
     margin: 0 auto;
-    color: red;
+    color: rgb(1, 108, 179);
     
     justify-content: space-evenly;
     
@@ -99,6 +99,7 @@
     
 }
 .right-side{ 
+    max-width: 100%;
     flex: auto;
     justify-content: flex-end;
     border-radius: 10px;
@@ -110,6 +111,7 @@
     gap: 2rem;
     article{
     border-bottom: 5px solid;
+    color: rgba(0, 134, 158, 0.699);
     
 }
 }
