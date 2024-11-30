@@ -53,7 +53,7 @@ let benefits = document.querySelector('.benefits');
 let hero_section = document.querySelector('hero-section');
 let hero_right = document.querySelector('.right-side');
 let hero_left = document.querySelector('.left-side');
-
+let menu = document.querySelectorAll('.service-dropdown .items ul')
 window.addEventListener('mousemove', cursor);
 
 function cursor(e){
@@ -70,8 +70,15 @@ info_nav.forEach(link => {
   });
 });
 
-hero_section.forEach(ul =>{
+menu.forEach(link =>{
 link.addEventListener('mouseover', () => {
     mouseCursor.classList.add('link-grow');
   });
 });
+
+
+  
+  const hero = document.querySelectorAll('.hero-section');
+  hero.forEach((el) => observer.observe(el));
+
+ 
